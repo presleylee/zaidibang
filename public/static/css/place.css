@@ -1,0 +1,136 @@
+.place-head {
+    height: 120px;
+    width: 100%;
+    margin: 0 auto 0px;
+    background: #EFEFEF;
+    border-bottom: 1px solid #ccc;
+}
+
+.head-body {
+    height: 120px;
+    width: 1100px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.head-top > h1 { margin:0; }
+.head-top { width:250px; text-align:left; position: absolute; left:0px; top:25px; }
+.head-top h1 { font-weight: 700; font-size:36px; color:#FB6A00;}
+.head-top h1 span { font-weight: 700; font-size:18px; color:#777 }
+
+.nav-place { position: absolute; bottom: 0px; }
+.nav-place li {background-image: -webkit-linear-gradient(top,#FAFAFA,#E8E8E8);background-image: -moz-linear-gradient(top,#FAFAFA,#E8E8E8);background-image: -o-linear-gradient(top,#FAFAFA,#E8E8E8);background-image: -ms-linear-gradient(top,#FAFAFA,#E8E8E8);background-image: linear-gradient(to bottom,#FAFAFA,#E8E8E8);-webkit-border-radius: 3px 3px 0 0;border-radius: 3px 3px 0 0;float: left;cursor: pointer;border: 1px solid #DEDEDE;border-bottom: 0; margin-top:-1px; margin-right: 5px;}
+.nav-place li a {display: block;font-size: 14px;color: #333;line-height: 20px;padding: 6px 20px;}
+
+.nav-place li.active {font-weight: 700; background: white; cursor: default;  margin-top:0px;}
+.nav-place li.active a { background: white;padding: 5px 22px 7px;position: relative;top: 1px;}
+
+.layout-wide { width:100%; height:auto; text-align: left; padding-top: 20px; }
+.layout-wide ul, .layout-wide li { list-style: none; margin: 0; padding: 0; }
+.layout-wide .inner { zoom: 1; margin: 0 auto 10px; width: 1100px; }
+.fl { float:left; }
+.fr { float:right; }
+.mt10 { margin-top:10px; }
+
+.placeinfo { border:1px solid #E5E5E5; box-shadow:0px 0px 8px #ccc; }
+.placeinfo #slide { width:630px; height: 310px; }
+.placeinfo .info-box {  height:310px; width:468px; background: #FCFCFC;}
+.info-box h2 { width:428px; height:30px; color:#FB6A00; line-height: 30px; margin:5px auto 0; font-weight: bold; font-size:14px; }
+.info-box .base-intro { padding:0px 30px; color:#555; font-size:12px; }
+.info-box dl { margin-top:0px; }
+.info-box dt { width:428px; height:30px; margin:5px auto 0; font-weight: bold; line-height: 30px;  font-size:14px; color:#FB6A00; }
+.info-box dd { width:428px; margin:0 auto;  background:#fff; border-width:1px 0px 0px 1px; }
+.info-box dd li { list-style: none; height:35px; line-height: 35px; width:213px; float:left; border-bottom:1px dotted #ccc; color:#777; }
+.info-box dd li label { text-indent:10px; float:left; width:70px; overflow: hidden; height: 35px; font-weight: bold; color:#333; }
+
+.mainbody { width:820px; }
+.side { width:260px; }
+.mainbody .mbox {   }
+
+.mbox h2 { height:45px; line-height: 45px; border-bottom: 2px solid #ddd; font-size:18px; color:#666; font-weight: bold; }
+.mbox .cont { padding:10px 0; width:100%; overflow: hidden;}
+.mbox .inner { width:820px }
+.scenic .inner, .food  .inner, .school .inner { text-align: left;  }
+
+.celebrity .col-sm-3 {width:200px;}
+.celebrity .card img{ width:140px;
+    height:162px; margin:15px auto; }
+.celebrity .card .card-content, .celebrity .card .card-actions { width:140px !important; margin:0 auto 5px; padding:0; }
+.celebrity .card .card-content { color:#777; height:80px; overflow: hidden; margin-bottom: 10px; }
+.celebrity .card .card-actions { margin-bottom: 15px; text-align: center; }
+.celebrity .card .card-actions a {color:#fff !important;  }
+
+
+.scenic .inner > .col-sm-3 { width:405px; height:180px; }
+.scenic .card:visited { text-decoration: none; }
+.scenic .card .card-heading { font-size:16px; color:#666; text-decoration: none;}
+.scenic .card .col-sm-1 { width:120px; height:90px; padding:0; margin-left:10px; }
+.scenic .card .card-img img { width:120px !important; height:90px; }
+.scenic .card .col-sm-2 { width:248px; height:90px;  line-height:22px; overflow: hidden; color:#999; }
+.scenic .card .card-actions { width:360px; margin:0px auto 0; padding-top: 5px; }
+.scenic .card .card-actions > div {margin-left: 10px; color:#666; font-size:12px; }
+.scenic .card-actions i { color:orangered; font-size:14px;  }
+
+
+.side .map { width:258px; height: 220px; line-height: 220px; text-align: center; border:1px solid #ccc; background:#eee; }
+.side ul, .side li { list-style: none; margin:0; padding:0; }
+
+.bbox { border:1px solid #ddd; border-radius: 3px;  }
+.bbox h2 { margin:0; background-image: -webkit-linear-gradient(top,#FAFAFA,#E8E8E8); background-image: -moz-linear-gradient(top,#FAFAFA,#E8E8E8);background-image: -o-linear-gradient(top,#FAFAFA,#E8E8E8);background-image: -ms-linear-gradient(top,#FAFAFA,#E8E8E8);background-image: linear-gradient(to bottom,#FAFAFA,#E8E8E8); }
+.bbox h2 {filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#FAFAFA, endColorstr=#E8E8E8);/*IE<9>*/-ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#FAFAFA, endColorstr=#E8E8E8)";/*IE8+*/}
+.bbox h2 { border-bottom: 1px solid #ddd; height:40px; line-height: 40px; text-indent: 15px; font-size:16px; color:#777; font-weight: 400; -webkit-border-radius: 3px 3px 0 0;border-radius: 3px 3px 0 0; }
+
+.area .cont { padding:10px; background:#f6f6f6; }
+.area .cont li { float:left; width:50px; text-align: center; line-height: 25px; height: 25px; font-size:12px; }
+.area .cont li a {color:#999}
+
+.food .cont { width:258px; height: auto; overflow: hidden; }
+.food .cont ul { padding-top:20px; width:278px; padding-left:22px; }
+.food .cont li {width:99px; height: 87px; margin: 0 15px 15px 0; text-align: center; float:left;}
+.food .cont li img { width:99px; height:66px; vertical-align: top; margin-bottom: 7px; }
+.food .cont li p {  }
+.food .cont li a p { color:#999; width:99px; height:14px; line-height: 14px; overflow: hidden; }
+
+.banner_mdd a.more{ position:absolute; bottom:10px; right:10px; color:#fff; z-index:10;}
+
+.intro .cont { padding:15px; width:auto; }
+.intro .cont p {text-align: left; text-indent: 20px; font-size: 14px; line-height: 25px; margin-bottom:15px;}
+
+.city_info { margin:10px 0; }
+
+.city_info dt { width:818px; height:30px; margin:5px auto 0; font-weight: bold; line-height: 30px;  font-size:14px; color:#FB6A00; }
+.city_info dd { width:818px; margin:0 auto;  background:#fff; border-width:1px 0px 0px 1px; }
+.city_info dd li { height:35px; line-height: 35px; width:409px; float:left; border-bottom:1px dotted #ccc; color:#777; }
+.city_info dd li label { text-indent:10px; float:left; width:70px; overflow: hidden; height: 35px; font-weight: bold; color:#333; }
+
+
+.arealist {}
+.arealist ul { padding-top:15px; }
+.arealist li { width:100%; height:110px; border-bottom: 1px dashed #ccc; margin-bottom: 20px; }
+.arealist li dt { width:120px; height: 90px; float: left; margin-left:10px; overflow: hidden;}
+.arealist li dt img { width:120px; height:90px; }
+.arealist li dd { margin-left:140px;  margin-right: 10px; }
+.arealist li dd h3 { font-size:16px; line-height: 18px; font-weight: 700; }
+.arealist li dd h3 a { font-weight: 700; }
+
+.arealist .cont li .s_icon { width:150px; float:right; height:18px; line-height: 18px; text-align: right; font-size:14px;}
+.arealist .cont li .s_icon i { font-size:14px; margin-right: 5px; color:orangered; }
+.arealist .cont li .s_icon span { margin-left: 10px; color:#999; }
+.arealist .cont li .s_icon span b {  font-weight: 100; }
+.arealist li dd p { margin-top:10px; line-height: 20px; height:60px; overflow: hidden; color:#888}
+
+
+.foodlist ul { width:860px; padding-top:10px;}
+.foodlist li {float:left; width:250px; height: 302px; margin-right:35px; margin-bottom: 35px; }
+.foodlist li a { text-decoration: none; color:#333; }
+.foodlist li a:hover { color:#333 }
+.foodlist li dt { width:250px; height:160px;}
+.foodlist li dt img {width:250px; height:160px;}
+.foodlist li dd { border:1px solid #ccc; border-top:0px; }
+.foodlist li dd h3 { width:228px; height:40px; font-size:14px; line-height: 40px; margin:0 auto; border-bottom: 1px dotted #ccc; }
+.foodlist li dd h3 span { color:#333; }
+.foodlist li a:hover dd h3 span { color:#E56F03}
+.foodlist li dd h3 font { text-align: right; float:right; font-size:12px; color:#999; }
+.foodlist li dd h3 font i { color:#E56F03; font-size:14px; margin-right: 5px; }
+.foodlist li dd p { padding:10px 12px; height:80px; overflow: hidden; line-height:20px; color:#666;}
+
