@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- ZUI 标准版压缩后的 CSS 文件 -->
+    <link rel="stylesheet" href="/static/css/zui.min.css">
+    <link rel="stylesheet" href="/static/css/common.css">
+    {volist name="css_list" id="css"}
+    <link rel="stylesheet" href="/static/css/{$css}.css">
+    {/volist}
+    <!-- ZUI Javascript 依赖 jQuery -->
+    <script src="/static/lib/jquery/jquery.js"></script>
+    <!-- ZUI 标准版压缩后的 JavaScript 文件 -->
+    <script src="/static/js/zui.min.js"></script>
+</head>
+<body>
+<header class="wd100">
+    <div class="global-header">
+        <div class="global-header-inner clearfix">
+            <div class="left">
+                <div class="logo"><a href="">城市聚合</a></div>
+                <ul class="nav nav-custom">
+                    <li><a href="index.php" class="cate-nav-home"><span>首页</span></a></li>
+                    <li class="dropdown-hover">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="?m=bbs">公共广场 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="http://discover.leho.com/tag/?cid=a37572e0683988ebb5eb06fa"><i
+                                        class="ico-sort ico-meishi"></i>乐享美食</a>
+                            </li>
+                            <li>
+                                <a href="http://discover.leho.com/tag/?cid=72e01b38fceab5ebc5db01fa"><i
+                                        class="ico-sort ico-wanle"></i>玩乐帮派</a>
+                            </li>
+                            <li>
+                                <a href="http://discover.leho.com/tag/?cid=1b3888ebc0eac5dbbde000fa"><i
+                                        class="ico-sort ico-liren"></i>都市丽人</a>
+                            </li>
+                            <li>
+                                <a href="http://discover.leho.com/tag/?cid=f836c4e9449fa37572e005fa"><i
+                                        class="ico-sort ico-hunlian"></i>浪漫婚恋</a>
+                            </li>
+                            <li>
+                                <a href="http://discover.leho.com/tag/?cid=c4e9349ed27472e01b3804fa"><i
+                                        class="ico-sort ico-mengbao"></i>辣妈萌宝</a>
+                            </li>
+                            <li>
+                                <a href="http://discover.leho.com/tag/?cid=349ea37500e11b3888eb07fa"><i
+                                        class="ico-sort ico-jujia"></i>幸福居家</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-hover">
+                        <a href="?m=brand" class="dropdown-toggle" data-toggle="dropdown">生活通 <span
+                                class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="?m=brand&a=street&c=list">找商家</a></li>
+                            <li><a href="?m=brand&a=street&c=list">淘优惠</a></li>
+                        </ul>
+                    </li>
+                    <li class="active"><a href="/">在地邦</a>
+                    </li>
+                    <li><a href="?m=brand&a=tools"><span>便民工具</span></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="right">
+                <ul class="login-nav">
+                    <li class="login-first-party">
+                        <a href="/register" target="_blank">注册</a><span class="gap">|</span>
+                        <a href="/login" target="_blank">登录</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</header>

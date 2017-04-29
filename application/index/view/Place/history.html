@@ -1,0 +1,58 @@
+{include file="layout/header"/}
+{include file="layout/head-nav" /}
+<div class="layout-wide">
+
+    <div class="inner clearfix">
+        <div class="mainbody fl">
+
+
+            <div id="slide" class="banner">
+                <ul>
+                    <li><a href=""><img src="/static/images/temp/1.jpg" width="630" height="310" /><p>测试一</p></a></li>
+                    <li><a href=""><img src="/static/images/temp/2.jpg" width="630" height="310" /><p>测试一</p></a></li>
+                    <li><a href=""><img src="/static/images/temp/3.jpg" width="630" height="310" /><p>测试一</p></a></li>
+                    <li><a href=""><img src="/static/images/temp/4.jpg" width="630" height="310" /><p>测试一</p></a></li>
+                </ul>
+            </div>
+
+            <script src="/static/js/slideplayer.js"></script>
+            <script language="javascript">
+                jQuery(function() {
+                    new slideplayer("#slide", {width: "820px", height: "310px", fontsize: "14px", time: "5000"});
+                })
+            </script>
+            <div class="mbox mbox">
+                <h2>城市信息</h2>
+                <dl class="city_info">
+                    <dd>
+                        <ul class="clearfix">
+                            <li><label>所属省份</label><span>江西省</span></li>
+                            <li><label>行政级别</label><span>地级市</span></li>
+                            <li><label>行政代码</label><span>360800</span></li>
+                            <li><label>邮政编码</label><span>343000</span></li>
+                            <li><label>电话区号</label><span>0796</span></li>
+                            <li><label>车牌号码</label><span>赣D</span></li>
+                            <li><label>国土面积</label><span>25300平方公里</span></li>
+                            <li><label>全市人口</label><span>530.4万</span></li>
+                        </ul>
+                    </dd>
+                </dl>
+            </div>
+            <div class="mbox intro">
+                <h2>历史沿革</h2>
+                <div class="cont clear">
+                    <p>吉安，江西省地级市，古称庐陵、吉州，元初取“吉泰民安”之意改称吉安。</p>
+                    <p>吉安市位于江西省中部，罗霄山脉中段，赣江中游，东邻抚州市乐安县及赣州市宁都和兴国县，西接湖南省的桂东、炎陵、茶陵县，南连赣州市的赣县、南康区、上犹县，北与宜春、丰城、樟树及新余、萍乡接壤。</p>
+                    <p>下辖吉州区、青原区、井冈山市和吉安县、泰和县、万安县、遂川县、永新县、永丰县、吉水县、峡江县、安福县、新干县等2区1市10县，另设有井冈山经济技术开发区（国务院批准设立的副厅级国家级开发区）和井冈山出口加工区（国务院批准设立）。全市总面积25300平方公里，人口530.4万。</p>
+                    <p>吉安素有“江南望郡”、“金庐陵”、“吉州福地”、“文章节义之邦”的美誉，是国家级电子信息产业示范基地，有举世闻名的革命摇篮井冈山、白鹭洲书院、青原山、吉州窑、庐陵文化生态园、武功山羊狮幕、天祥景区文天祥纪念馆等著名景区景点。</p>
+                </div>
+            </div>
+
+        </div>
+
+        {include file="layout/place-side"/}
+    </div>
+</div>
+
+
+{include file="layout/footer"/}
