@@ -2,3 +2,7 @@
 composer.lock
 *.log
 thinkphp
+runtime/
+README.md
+LICENSE.txt
+.travis.yml
