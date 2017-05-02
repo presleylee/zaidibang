@@ -19,6 +19,7 @@ return [
     '/place/food' => '/index/place/food',
     '/place/celebrity' => '/index/place/celebrity',
     '/place/school' => '/index/place/school',
+    '/place/company' => '/index/place/company',
 //    '__pattern__' => [
 //        'name' => '\w+',
 //    ],

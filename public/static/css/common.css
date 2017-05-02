@@ -4,6 +4,24 @@ body { font-family: "Microsoft YaHei", tahoma, arial, "微软雅黑" }
 a:link,a:visited{color:#16B}
 a:hover,a:active{color:#f60}
 
+/* pageNav */
+
+.pagebar { margin-bottom:20px;}
+.pagebar a, .pagebar span, .pagebar b {
+    height: 25px;
+    line-height: 25px;
+    display: inline-block;
+    border: 1px solid #D8DCE6;
+    padding: 0 15px;
+    color: #303131;
+}
+
+.pagebar a:hover, .pagebar a.on, .pagebar span {
+    background: #5294d1;
+    color: #fff;
+}
+.pagebar b { font-weight: 100; }
+
 header .global-header {
     position:fixed; top:0; left:0; z-index:100;background:#383838 url('../images/header/bg_hd.jpg') 0 0 repeat-x; width:100% !important; height:40px;padding:0;text-align:center;box-shadow:0 1px 2px rgba(0,0,0,0.4)
 }

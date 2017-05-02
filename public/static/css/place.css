@@ -48,11 +48,11 @@
 .mainbody .mbox {   }
 
 .mbox h2 { height:45px; line-height: 45px; border-bottom: 2px solid #ddd; font-size:18px; color:#666; font-weight: bold; }
-.mbox .cont { padding:10px 0; width:100%; overflow: hidden;}
-.mbox .inner { width:820px }
+.mbox .cont { padding:10px 0; width:100%; height: auto; overflow: hidden;}
+.mbox .inner { width:820px; height: auto; }
 .scenic .inner, .food  .inner, .school .inner { text-align: left;  }
 
-.celebrity .col-sm-3 {width:200px;}
+.celebrity .col-sm-4 {width:200px;}
 .celebrity .card img{ width:140px;
     height:162px; margin:15px auto; }
 .celebrity .card .card-content, .celebrity .card .card-actions { width:140px !important; margin:0 auto 5px; padding:0; }
@@ -60,7 +60,7 @@
 .celebrity .card .card-actions { margin-bottom: 15px; text-align: center; }
 .celebrity .card .card-actions a {color:#fff !important;  }
 
-
+/* 景点景区 */
 .scenic .inner > .col-sm-3 { width:405px; height:180px; }
 .scenic .card:visited { text-decoration: none; }
 .scenic .card .card-heading { font-size:16px; color:#666; text-decoration: none;}
@@ -71,6 +71,36 @@
 .scenic .card .card-actions > div {margin-left: 10px; color:#666; font-size:12px; }
 .scenic .card-actions i { color:orangered; font-size:14px;  }
 
+/* 行政区划 */
+.area .col-sm-1 { width:820px; height: 110px; margin-bottom: 10px; border-bottom: 1px dashed #ccc; }
+.area .col-sm-2 { width:120px; height: 90px; }
+.area .col-sm-3 { width:670px; height: 88px; overflow: hidden; margin-left:10px; }
+.area .card-img { padding:0px; width:120px; height: 90px; }
+.area .card-img img { width:120px; height: 90px; }
+.area .col-sm-3 .card-heading { margin:0px; padding:0px; height: 18px; line-height: 18px; }
+.area .col-sm-3 .card-heading a { color:#000; font-size:16px; font-weight: 700; text-decoration: none; }
+.area .col-sm-3 .card-heading i { margin-left:10px; }
+.area .col-sm-3 > p {margin-top: 10px;line-height: 20px;height: 60px; overflow: hidden; color: #888;  }
+
+/* 美食 */
+.food .col-sm-3 { width:270px;}
+.food a:visited, .food a:hover, .food a:active { text-decoration: none; }
+.food  .card-heading { font-weight: bold; font-size:14px; color:#666; padding:5px 10px; }
+.food  .card-heading span { float:right; color: #999; font-weight: 100; }
+.food  .card-heading span > i { color:orangered; margin-right: 5px; }
+.food  .card-content { color:#888; height: 80px; overflow: hidden; line-height:20px; margin-bottom: 10px; }
+
+
+/* 学校 */
+.school .inner > .col-sm-2 {width:400px; height: 180px; margin-bottom: 20px;}
+.school .card .col-sm-1 { width:160px; height:160px; padding:0; margin-top:10px; margin-left:10px; }
+.school .card .col-sm-1 img { width:160px !important; height:160px; border:1px solid #eee; }
+.school .card .col-sm-2 { width:200px; height:180px;  line-height:22px; overflow: hidden; color:#999;  }
+.school .card .card-heading { font-size:16px; font-weight: bold; color:#333; text-align: left; padding-bottom:5px;}
+.school .card .card-content { height: 100px; width:200px; line-height: 20px; overflow: hidden;}
+.school .card .card-actions { margin:0px auto 0; padding-top: 5px; }
+.school .card .card-actions > div {margin-left: 10px; color:#666; font-size:12px; }
+.school .card-actions i { color:orangered; font-size:14px;  }
 
 .side .map { width:258px; height: 220px; line-height: 220px; text-align: center; border:1px solid #ccc; background:#eee; }
 .side ul, .side li { list-style: none; margin:0; padding:0; }
@@ -80,16 +110,16 @@
 .bbox h2 {filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#FAFAFA, endColorstr=#E8E8E8);/*IE<9>*/-ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#FAFAFA, endColorstr=#E8E8E8)";/*IE8+*/}
 .bbox h2 { border-bottom: 1px solid #ddd; height:40px; line-height: 40px; text-indent: 15px; font-size:16px; color:#777; font-weight: 400; -webkit-border-radius: 3px 3px 0 0;border-radius: 3px 3px 0 0; }
 
-.area .cont { padding:10px; background:#f6f6f6; }
-.area .cont li { float:left; width:50px; text-align: center; line-height: 25px; height: 25px; font-size:12px; }
-.area .cont li a {color:#999}
+.side .area .cont { padding:10px; background:#f6f6f6; }
+.side .area .cont li { float:left; width:50px; text-align: center; line-height: 25px; height: 25px; font-size:12px; }
+.side .area .cont li a {color:#999}
 
-.food .cont { width:258px; height: auto; overflow: hidden; }
-.food .cont ul { padding-top:20px; width:278px; padding-left:22px; }
-.food .cont li {width:99px; height: 87px; margin: 0 15px 15px 0; text-align: center; float:left;}
-.food .cont li img { width:99px; height:66px; vertical-align: top; margin-bottom: 7px; }
-.food .cont li p {  }
-.food .cont li a p { color:#999; width:99px; height:14px; line-height: 14px; overflow: hidden; }
+.side .food .cont { width:258px; height: auto; overflow: hidden; }
+.side .food .cont ul { padding-top:20px; width:278px; padding-left:22px; }
+.side .food .cont li {width:99px; height: 87px; margin: 0 15px 15px 0; text-align: center; float:left;}
+.side .food .cont li img { width:99px; height:66px; vertical-align: top; margin-bottom: 7px; }
+.side .food .cont li p {  }
+.side .food .cont li a p { color:#999; width:99px; height:14px; line-height: 14px; overflow: hidden; }
 
 .banner_mdd a.more{ position:absolute; bottom:10px; right:10px; color:#fff; z-index:10;}
 
@@ -118,19 +148,4 @@
 .arealist .cont li .s_icon span { margin-left: 10px; color:#999; }
 .arealist .cont li .s_icon span b {  font-weight: 100; }
 .arealist li dd p { margin-top:10px; line-height: 20px; height:60px; overflow: hidden; color:#888}
-
-
-.foodlist ul { width:860px; padding-top:10px;}
-.foodlist li {float:left; width:250px; height: 302px; margin-right:35px; margin-bottom: 35px; }
-.foodlist li a { text-decoration: none; color:#333; }
-.foodlist li a:hover { color:#333 }
-.foodlist li dt { width:250px; height:160px;}
-.foodlist li dt img {width:250px; height:160px;}
-.foodlist li dd { border:1px solid #ccc; border-top:0px; }
-.foodlist li dd h3 { width:228px; height:40px; font-size:14px; line-height: 40px; margin:0 auto; border-bottom: 1px dotted #ccc; }
-.foodlist li dd h3 span { color:#333; }
-.foodlist li a:hover dd h3 span { color:#E56F03}
-.foodlist li dd h3 font { text-align: right; float:right; font-size:12px; color:#999; }
-.foodlist li dd h3 font i { color:#E56F03; font-size:14px; margin-right: 5px; }
-.foodlist li dd p { padding:10px 12px; height:80px; overflow: hidden; line-height:20px; color:#666;}
 

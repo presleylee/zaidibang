@@ -26,6 +26,7 @@ class Place extends Common
             'food' => '',
             'celebrity' => '',
             'school' => '',
+            'company' => '',
         ];
         $this->assign('active', $this->active);
     }
@@ -83,6 +84,13 @@ class Place extends Common
     public function school()
     {
         $this->active['school'] = ' class="active"';
+        $this->assign('active', $this->active);
+        return view();
+    }
+
+    public function company()
+    {
+        $this->active['company'] = ' class="active"';
         $this->assign('active', $this->active);
         return view();
     }
