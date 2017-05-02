@@ -1,25 +1,16 @@
 body { font-family: "Microsoft YaHei", tahoma, arial, "微软雅黑" }
 .wd100 { height:40px; width:100%; }
+
 .container-fixed {width:1190px;}
+.mt50 { margin-top:50px !important; }
 a:link,a:visited{color:#16B}
 a:hover,a:active{color:#f60}
 
 /* pageNav */
-
 .pagebar { margin-bottom:20px;}
-.pagebar a, .pagebar span, .pagebar b {
-    height: 25px;
-    line-height: 25px;
-    display: inline-block;
-    border: 1px solid #D8DCE6;
-    padding: 0 15px;
-    color: #303131;
-}
+.pagebar a, .pagebar span, .pagebar b {  height: 25px;  line-height: 25px;  display: inline-block;  border: 1px solid #D8DCE6;  padding: 0 15px; color: #303131;  }
 
-.pagebar a:hover, .pagebar a.on, .pagebar span {
-    background: #5294d1;
-    color: #fff;
-}
+.pagebar a:hover, .pagebar a.on, .pagebar span { background: #5294d1;  color: #fff;  }
 .pagebar b { font-weight: 100; }
 
 header .global-header {
