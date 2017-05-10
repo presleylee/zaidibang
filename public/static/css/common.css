@@ -44,7 +44,7 @@ header .global-header {
 .global-header-inner .login-nav .login-third-party{color:#ccc !important;; display:block;text-align:center;width:116px;height:28px;line-height:28px;_height:21px;_padding-top:7px;_overflow:hidden}
 .global-header-inner .login-nav .login-first-party a { color:#ccc !important; }
 
-footer { width:100%; border-top:2px solid #ccc; padding-top:10px; margin-top:40px; background:#f4f4f4 }
+footer { width:100%; padding-top:10px; margin-top:40px; background:#f4f4f4 }
 footer .footer { width:1100px; margin:0px auto 10px; height:25px; text-align: center; line-height:25px; color:#999; font-size:14px;}
 .footer > a { font-size:14px; color:#666; margin:0 5px }
 .copyright { text-align: center; padding-bottom: 25px; color:#999; font-family: "Microsoft YaHei", tahoma, arial, "微软雅黑" }
