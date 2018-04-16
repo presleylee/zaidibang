@@ -1,0 +1,8 @@
+
+.layui-form { width:450px; padding:0px 0 10px; margin:185px auto; border-radius: 10px; background: rgba(255,255,255, 0.7); box-shadow:1px 1px 10px #076F65}
+.layui-form h2 { width:450px; height:45px; line-height:45px; background:#0D5851; color:#fff; text-indent:20px; margin-bottom: 20px;  border-top-left-radius: 10px; border-top-right-radius: 10px; }
+.layui-form h2 { font-weight: bolder; font-size:16px; }
+.layui-form-label { width:100px; color:#333 !important; }
+.layui-layer-content { color:darkred; }
+
+.login-btn { background-color:#0D5851 }
