@@ -9,6 +9,12 @@
 // | Author: liu21st <liu21st@gmail.com>
 // +----------------------------------------------------------------------
 
+use  \think\Route;
+
+
+Route::domain('www','index'); //二级域名绑定
+Route::domain('admin','admin'); //二级域名绑定
+
 return [
     '/' => '/index/index',
     '/place' => '/index/place/index',
