@@ -16,16 +16,16 @@ Route::domain('www','index'); //二级域名绑定
 Route::domain('admin','admin'); //二级域名绑定
 
 return [
-    '/' => '/index/index',
-    '/place' => '/index/place/index',
-    '/place/intro' => '/index/place/intro',
-    '/place/history' => '/index/place/history',
-    '/place/area' => '/index/place/area',
-    '/place/scenic' => '/index/place/scenic',
-    '/place/food' => '/index/place/food',
-    '/place/celebrity' => '/index/place/celebrity',
-    '/place/school' => '/index/place/school',
-    '/place/company' => '/index/place/company',
+    '/' => 'index/index',
+    '/place' => 'index/place/index',
+    '/place/intro' => 'index/place/intro',
+    '/place/history' => 'index/place/history',
+    '/place/area' => 'index/place/area',
+    '/place/scenic' => 'index/place/scenic',
+    '/place/food' => 'index/place/food',
+    '/place/celebrity' => 'index/place/celebrity',
+    '/place/school' => 'index/place/school',
+    '/place/company' => 'index/place/company',
 //    '__pattern__' => [
 //        'name' => '\w+',
 //    ],
