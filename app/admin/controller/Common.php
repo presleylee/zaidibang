@@ -13,8 +13,10 @@ use think\Controller;
 use think\Session;
 use think\Cookie;
 use think\Request;
+use think\config;
 use think\Db;
 use Rbac;
+
 
 
 class Common extends Controller
@@ -24,7 +26,8 @@ class Common extends Controller
         $current_host = Request::instance()->host();
         $host_array = explode('.', $current_host);
         $this->alias = strtolower( reset($host_array) );
-        if ( config('ADMIN_PREFIX') != $this->alias && ACTION_NAME != 'no_page' ) {
+
+        if ( config('domain')['admin_prefix'] != $this->alias && ACTION_NAME != 'no_page' ) {
             $this->_404();
         }
 
@@ -38,32 +41,7 @@ class Common extends Controller
             $not_auth = in_array(strtolower(ACTION_NAME), $not_auth_arr[strtolower(CONTROLLER_NAME)]);
         }
 
-        if (config('USER_AUTH_ON') && !$not_auth) {
-            //是否权限认证
-            if (!Rbac::AccessDecision()) {
-
-                if (request()->isAjax()) {
-                    return json(['status' => 0,  'msg' => '没有操作权限']);
-                } else {
-                    // 没有权限 抛出错误
-                    if (config('RBAC_ERROR_PAGE')) {
-                        $this->redirect(config('RBAC_ERROR_PAGE'));// 定义权限错误页面
-                    } else {
-                        // 提示错误信息
-                        message('没有操作权限', 3);
-                    }
-                }
-            }
-        }
-
-        $menu = [];
-
-        $admin_user = cookie('admin_user');
-        $this->assign('userinfo', $admin_user);
-        $this->assign('leftMenu',list_to_tree($menu));
-        $this->assign('staticUrl',config('static_url'));
-        $this->assign('resUrl', config('RES_URL'));
-        $this->assign('bootUrl', config('BOOT_URL'));
+        $this->assign('css_version', config('css_version') ? : substr(time(),0, 6));
 
     }
 
@@ -85,7 +63,6 @@ class Common extends Controller
 
         $user_id = Session::get( config('USER_AUTH_KEY') );
         $this->userinfo = $admin_user = Cookie::get('admin_user');
-
         if ( (!$user_id || !$admin_user) && (strtolower(CONTROLLER_NAME) != 'index' && !in_array(ACTION_NAME, ['login', 'no_page', 'getArea'])) ) {
             $this->redirect('index/login');
         }
