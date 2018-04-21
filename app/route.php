@@ -11,11 +11,11 @@
 
 use  \think\Route;
 
+
+Route::domain('www','index'); //二级域名绑定
 Route::domain('admin','admin'); //二级域名绑定
-Route::domain('m','mobile'); //二级域名绑定
-//二级域名绑定
-Route::domain('www', [
-    'index' => 'index/index',
+
+return [
     '/' => 'index/index',
     '/place' => 'index/place/index',
     '/place/intro' => 'index/place/intro',
@@ -26,10 +26,6 @@ Route::domain('www', [
     '/place/celebrity' => 'index/place/celebrity',
     '/place/school' => 'index/place/school',
     '/place/company' => 'index/place/company',
-]);
-
-return [
-
 //    '__pattern__' => [
 //        'name' => '\w+',
 //    ],
